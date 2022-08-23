@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  my-redis-server:
+    image: redis
+    expose:
+      - '6397'
+    volumes:
+      - ./redis-db:/data
+
+  visitorapp:
+    build:
+      context: .
+    ports:
+      - '1233:9999'
+    depends_on:
+      - my-redis-server
+    volumes:
+      - ./:/app
+volumes:
+   redis-db:
+    
+
+
+
