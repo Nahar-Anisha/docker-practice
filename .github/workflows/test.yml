@@ -28,7 +28,7 @@ jobs:
     #     node-version: '14'
     - name: Copy files to the production website with the AWS CLI
       run: |
-        aws s3 sync --delete  s3://${{ env.BUCKET }}
+        aws s3 sync --delete . s3://${{ env.BUCKET }}
     - name: Copy files to the production website with the AWS CLI
       run: |
         aws cloudfront create-invalidation \
