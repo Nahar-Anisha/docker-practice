@@ -11,7 +11,7 @@ jobs:
       BUCKET: www.mypracticeprojects.com
       DIST: build
       REGION: ap-south-1
-      DIST_ID: E752YIXCXPOSB
+      DIST_ID: E12PI3WJ9WC1TU
 
     steps:
     - name: Checkout
