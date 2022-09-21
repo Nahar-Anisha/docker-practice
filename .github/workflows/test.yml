@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: testing-cf-static
-      DIST: build
+      DIST: index.html
       REGION: ap-south-1
       DIST_ID: E12PI3WJ9WC1TU
 
